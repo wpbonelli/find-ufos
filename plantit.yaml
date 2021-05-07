@@ -1,6 +1,6 @@
 name: "Phenome Force Demo: Find UFOs"
 author: Groot
-public: True
+public: False
 clone: False
 image: docker://wbonelli/find-ufos
 commands: python3 find.py ufos $INPUT
