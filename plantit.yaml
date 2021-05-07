@@ -12,7 +12,7 @@ resources:
   cores: 1
 input:
   path:
-  kind: files
+  kind: file
   filetypes:
     - jpg
     - png
