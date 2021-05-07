@@ -6,4 +6,4 @@ A short workflow to demonstrate how to integrate code with PlantIT. Applies a th
 
 `docker run -it -v $(pwd):/opt/spg -w /opt/spg computationalplantscience/spg python3 find.py ufos <input file>`
 
-A file is provided for testing: `data/tomatoes1.jpg
+A file is provided for testing: `data/tomatoes1.jpg`
