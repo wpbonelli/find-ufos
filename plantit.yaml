@@ -11,10 +11,8 @@ resources:
   processes: 1
   cores: 1
 input:
-  path:
-  kind: file
+  kind: files
 output:
-  path:
   include:
     patterns:
       - png
