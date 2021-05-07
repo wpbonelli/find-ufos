@@ -4,6 +4,7 @@ public: False
 clone: False
 image: docker://computationalplantscience/spg
 commands: python3 find.py ufos $INPUT
+logo: contours.jpg
 resources:
   time: "00:10:00"
   mem: "5GB"
