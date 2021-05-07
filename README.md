@@ -1,3 +1,9 @@
-# simple-segmentation
+# Phenome Force Demo: UFOs
 
-Usage: `docker run -it -v $(pwd):/opt/dev -w /opt/dev computationalplantscience/arabidopsis-rosette-analysis python3 segment.py segment data/tomatoes1.jpg`
+A short workflow to demonstrate how to integrate code with PlantIT. Applies a threshold, dilates/closes, and finds contours of (U)nidentified (F)ruit (O)bjects in an image.
+
+## Usage
+
+`docker run -it -v $(pwd):/opt/spg -w /opt/spg computationalplantscience/spg python3 find.py ufos <input file>`
+
+A file is provided for testing: `data/tomatoes1.jpg

@@ -1,0 +1,19 @@
+name: Phenome Force Demo: Segmentation & Contours
+author: Groot
+public: False
+clone: False
+image: docker://computationalplantscience/spg
+commands: python3 find.py ufos $INPUT
+resources:
+  time: "00:10:00"
+  mem: "5GB"
+  processes: 1
+  cores: 1
+input:
+  path:
+  kind: file
+output:
+  path:
+  include:
+    patterns:
+      - png

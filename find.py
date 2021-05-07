@@ -11,16 +11,8 @@ import cv2
 import click
 
 
-def simple_threshold(image: np.ndarray, threshold: int = 90, invert: bool = False) -> np.ndarray:
-	if threshold < 0 or threshold > 255:
-		raise ValueError(f"Threshold must be between 0 and 255")
-
-	_, image = cv2.threshold(image, threshold, 255, cv2.THRESH_BINARY_INV if invert else cv2.THRESH_BINARY)
-	return image
-
 
 def otsu_threshold(image: np.ndarray) -> np.ndarray:
-	# image = cv2.createCLAHE(clipLimit=3).apply(image)
 	_, image = cv2.threshold(image, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
 	return image
 
@@ -57,7 +49,7 @@ def cli():
 @cli.command()
 @click.argument('input_file')
 @click.option('-o', '--output_directory', required=False, type=str, default='')
-def segment(input_file, output_directory):
+def ufos(input_file, output_directory):
 	Path(output_directory).mkdir(parents=True, exist_ok=True)
 	color = cv2.imread(input_file)
 	gray = cv2.imread(input_file, cv2.IMREAD_GRAYSCALE)
