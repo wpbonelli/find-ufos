@@ -13,6 +13,9 @@ resources:
 input:
   path:
   kind: files
+  filetypes:
+    - jpg
+    - png
 output:
   path:
   include:
