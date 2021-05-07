@@ -1,4 +1,4 @@
-# Phenome Force Demo: UFOs
+# Phenome Force Demo: Find UFOs
 
 A short workflow to demonstrate how to integrate code with PlantIT. Applies a threshold, dilates/closes, and finds contours of (U)nidentified (F)ruit (O)bjects in an image.
 
