@@ -1,4 +1,5 @@
-author: Groot
+name: Find UFOs
+author: Wes Bonelli
 clone: False
 image: docker://wbonelli/find-ufos
 commands: python3 /opt/find-ufos/find.py ufos $INPUT
