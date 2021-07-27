@@ -3,11 +3,6 @@ clone: False
 image: docker://wbonelli/find-ufos
 commands: python3 /opt/find-ufos/find.py ufos $INPUT
 logo: contours.jpg
-resources:
-  time: "00:10:00"
-  mem: "5GB"
-  processes: 1
-  cores: 1
 input:
   path:
   kind: file
@@ -19,3 +14,8 @@ output:
   include:
     patterns:
       - png
+jobqueue:
+  walltime: "00:10:00"
+  memory: "5GB"
+  processes: 1
+  cores: 1
