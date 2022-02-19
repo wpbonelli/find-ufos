@@ -4,6 +4,9 @@ clone: False
 image: docker://wbonelli/find-ufos
 commands: python3 /opt/find-ufos/find.py ufos $INPUT
 logo: contours.jpg
+env:
+  - LC_ALL=C.UTF-8
+  - LANG=C.UTF-8
 input:
   path:
   kind: file
