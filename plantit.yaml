@@ -1,6 +1,6 @@
 name: Find UFOs
 author: Wes Bonelli
-clone: False
+public: True
 image: docker://wbonelli/find-ufos
 commands: python3 /opt/find-ufos/find.py ufos $INPUT
 logo: contours.jpg
