@@ -20,7 +20,7 @@ output:
     patterns:
       - png
 jobqueue:
-  walltime: "00:10:00"
+  walltime: "00:30:00"
   memory: "5GB"
   processes: 1
   cores: 1
