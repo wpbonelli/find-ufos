@@ -9,7 +9,6 @@ env:
   - LC_ALL=C.UTF-8
   - LANG=C.UTF-8
 input:
-  path:
   kind: file
   filetypes:
     - jpg
