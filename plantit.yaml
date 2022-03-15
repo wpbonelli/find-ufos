@@ -1,5 +1,6 @@
 name: Find UFOs
 author: Wes Bonelli
+email: wbonelli@uga.edu
 public: True
 image: docker://wbonelli/find-ufos
 commands: python3 /opt/find-ufos/find.py ufos $INPUT
